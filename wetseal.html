@@ -1,0 +1,595 @@
+<script src="/js/more_colors.js" type="text/javascript"></script><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <link href="/assets/ws/favicon.ico" rel="shortcut icon"/><script src="/js/ws/jquery-1.2.1.min.js" type="text/javascript"></script><script src="/js/ws/jquery.vcenter.js" type="text/javascript"></script><script src="/js/ws/navigation.js" type="text/javascript"></script><link href="/css/ws/screen.css" rel="stylesheet" type="text/css" media="screen"/><lINK REL="stylesheet" HREF="/css/ws/header.css" TYPE="text/css" MEDIA=screen>
+
+  <script type="text/javascript">
+
+    function my_fc_rpt(params, tags) {
+  	if (typeof fc_rpt == "undefined") {
+	// try again in 1 second
+	setTimeout(function() { my_fc_rpt(params, tags) }, 1000);
+	} else {
+	// invoke fc_rpt now
+	fc_rpt(params, tags);
+	}
+  }
+
+function doSearchFocus(component)
+    {
+        var searchVal = component.value;//document.searchForm.keyword.value;
+        if (searchVal == "type search item here")
+        {
+            //document.searchForm.keyword.value = "";
+            component.value = "";
+        }
+    }
+
+function doSearchBlur(component)
+    {
+        var searchVal = component.value;//document.searchForm.keyword.value;
+        if (strTrim(searchVal) == '')
+        {
+            //document.searchForm.keyword.value = "enter keyword or item #";
+            component.value = "type search item here";
+        }
+    }
+  </script>
+
+
+  <script src="/js/ws/more_colors.js" type="text/javascript"></script><script src="/js/ws/product_variant.js" type="text/javascript"></script><script src="/js/ws/variant_dropdown.js" type="text/javascript"></script><script src="/js/ws/cbFormatter.js" type="text/javascript"></script><script type="text/javascript">
+                $(function()
+                {
+                    // setup the quickview hover
+                    timer = 0;
+                    $(".has-quickview").hover(function()
+                    {
+                        if (typeof timer != "undefined")
+                        {
+                            clearTimeout(timer)
+                        }
+
+                        $("#quickview-icon").remove();
+                        html = '<img id="quickview-icon" src="/assets/ws/images/category/btn-quickview.png" width="75" height="21" border="0" alt="Quick View"/>';
+                        $(this).parent().parent().append(html);
+                        $("#quickview-icon").unbind("mouseover").mouseover(function()
+                        {
+                            clearTimeout(timer);
+                        });
+                        $("#quickview-icon").unbind("click").click(function(ev)
+                        {
+                            loadQuickView("", this, ev);
+                            return false;
+                        });
+                    }, function()
+                    {
+                        timer = setTimeout(function()
+                        {
+                            $("#quickview-icon").remove();
+                        }, 500);
+                    });
+
+                    $(".category-product-more-color").hover(function(ev)
+                    {
+                        if (typeof timer != "undefined")
+                        {
+                            clearTimeout(timer);
+                        }
+                        html = '<img id="quickview-icon" src="/assets/ws/images/category/btn-quickview.png" width="0" height="0" border="0" alt="0"/>';
+                        $(this).parent().parent().append(html);
+                        loadMoreColorsQuickView("", document.getElementById('quickview-icon'), ev);
+                        $("#quickview-icon").remove();
+                        return false;
+                    }, function()
+                    {
+                        timer = setTimeout(function()
+                        {
+                            $("#quickview-icon").remove();
+                        }, 500);
+                    });
+                });
+            </script>
+        <link href="/css/ws/print.css" rel="stylesheet" type="text/css" media="print"/><!--[if lt IE 7.]>
+  <style>
+    /* fixes all PNGs in IE6 */
+    img, .widget-ie6png { behavior: url(/css/ws/iepngfix.htc); }
+  </style>
+  <![endif]-->
+
+  <title>Subcategory - Default</title>
+
+  <meta name="keywords" content="Teen Clothing for Girls by Wet Seal - for the hottest fashions, teen trends, newest looks, trendy gifts and latest style" />
+<meta name="description" content="Teen Clothing for Girls by Wet Seal - for the hottest fashions, teen trends, newest looks, trendy gifts and latest style" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="container-padding">
+
+      <!-- header -->
+      <div id="header-area">
+        <form action="http://intl.wetseal.com/catalog/search.cmd" method="get" name="searchForm"><input type='hidden' name='form_state' value='searchForm'/><a href="http://intl.wetseal.com/home.jsp"><img class="header-logo" name="logo" src="/assets/ws/images/global/ws_logo.gif" border="0" alt="Wet Seal"/></a><div id="header2-links"><a href="http://app.wetsealnews.com/prefcenter/signup.cfm"><img name="email" src="/assets/ws/images/global/btn-envelope.gif" border="0" alt="Email Sign Up"/></a>&nbsp;<a href="http://app.wetsealnews.com/prefcenter/signup.cfm">Email Sign Up!</a><img src="/assets/ws/images/global/header_vertline.gif" border="0"/><img src="/assets/ws/images/global/mobile-icon.gif" border="0"/><a href="http://intl.wetseal.com/content.jsp?pageName=WSMobile">Mobile</a><img src="/assets/ws/images/global/header_vertline.gif" border="0"/><a href="http://intl.wetseal.com/utils/context.jsp">Change Country</a>&nbsp;            <img src="/assets/ws/images/global/flags/BD.gif" border="0" alt="BANGLADESH"/><img src="/assets/ws/images/global/header_vertline.gif" border="0"/><input name="keyword" type="text" value="type search item here" size="20" maxlength="50"onFocus="doSearchFocus(this)"onBlur="doSearchBlur(this)"/><input id="btn-search-go" onClick="return doSearch()" type="image" src="/assets/ws/images/global/gobtn.png" alt="Search"/><img src="/assets/ws/images/global/header_vertline.gif" border="0"/>0 ITEMS <a href="/checkout/basket.jsp"><span class="header-checkout">CHECKOUT</span></a><a href="/checkout/basket.jsp"><img src="/assets/ws/images/global/shoppingbag-icon2.png" hspace="2"/></a><div class="clr"><!--  --></div>     </div>    </form><div id="nav-container"> <div id="top-nav-left"> 	<a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=739">Plus Sizes</a><a href="http://intl.wetseal.com/content.jsp?pageName=ShopWithFriends">Shop with Friends</a><a href="http://intl.wetseal.com/content.jsp?pageName=ShopByTrend">Shop by Trend</a><a href="http://intl.wetseal.com/outfitter/community.cmd">Browse Outfits</a><a href="http://intl.wetseal.com/content.jsp?pageName=HotSpot">The Hotspot</a><a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=1032">Online Exclusives</a><a onClick="popupWindow(this,'_blank','location=0,status=0,menubar=0,toolbar=0,resizable=0,width=518,height=418'); return false;" href="/user/radio_playlist.jsp">WS Radio</a></div>            <div id="catalog-nav"><!-- 109  | 109 -->    <!-- 109 || 111-->	    <a href="http://intl.wetseal.com/catalog/justarrived.jsp"><img src="/assets/ws/images/global/nav/btn-just arrived.gif" alt="Just Arrived"/></a><!-- 109 || 101-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=101"><img src="/assets/ws/images/global/nav/btn-tops.gif" alt="Tops"/></a><!-- 109 || 110-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=110"><img src="/assets/ws/images/global/nav/btn-sweaters.gif" alt="Sweaters"/></a><!-- 109 || 102-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=102"><img src="/assets/ws/images/global/nav/btn-bottoms.gif" alt="Bottoms"/></a><!-- 109 || 104-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=104"><img src="/assets/ws/images/global/nav/btn-dresses.gif" alt="Dresses"/></a><!-- 109 || 103-->	    <a href="http://intl.wetseal.com/catalog/denim.jsp?categoryId=103"><img src="/assets/ws/images/global/nav/btn-denim.gif" alt="Denim"/></a><!-- 109 || 1057-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=1057"><img src="/assets/ws/images/global/nav/btn-active.gif" alt="Active"/></a><!-- 109 || 451-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=451"><img src="/assets/ws/images/global/nav/btn-jackets.gif" alt="Jackets"/></a><!-- 109 || 544-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=544"><img src="/assets/ws/images/global/nav/btn-swimwear.gif" alt="Swimwear"/></a><!-- 109 || 106-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=106"><img src="/assets/ws/images/global/nav/btn-accessories.gif" alt="Accessories"/></a><!-- 109 || 109-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=109"><img id="activeNav" src="/assets/ws/images/global/nav/btn-shoes-active.gif" alt="Shoes"/></a><!-- 109 || 107-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=107"><img src="/assets/ws/images/global/nav/btn-intimates.gif" alt="Intimates"/></a><!-- 109 || 178-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=178"><img src="/assets/ws/images/global/nav/btn-sale.gif" alt="Sale"/></a><!-- 109 || 809-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=809"><img src="/assets/ws/images/global/nav/btn-clearance.gif" alt="Clearance"/></a></div></div><!-- Navigational Header Ends--></div>
+      <div class="clr"><!--  --></div>
+      <!-- /header  gmax -->
+
+      <!-- content -->
+      <div id="content-area">
+        <link href="../css/more_colors.css" rel="stylesheet" type="text/css"/>
+
+<!-- Setup how many, and what we are showing -->
+<!-- /Setup how many, and what we are showing -->
+<!-- secondary nav & pagnation area -->
+<div class="secondary-area-thumbnail">
+    <!-- secondary nav include -->
+    <span class="fl" style="margin: 2px 0 0 9px;">
+    <a class="sec-nav" href="/catalog/thumbnail.jsp?categoryId=109&amp;subCategoryId=208">Sandals</a>&nbsp;|&nbsp;<span id="sec-nav-active"><a class="sec-nav" href="/catalog/thumbnail.jsp?categoryId=109&amp;subCategoryId=207">Flats</a>&nbsp;|&nbsp;</span>
+        <a class="sec-nav" href="/catalog/thumbnail.jsp?categoryId=109&amp;subCategoryId=132">Pumps</a>&nbsp;|&nbsp;<a class="sec-nav" href="/catalog/thumbnail.jsp?categoryId=109&amp;subCategoryId=206">Boots</a></span>
+
+<!-- /secondary nav include -->
+    <!-- Pagnation -->
+    <table cellpadding="0" cellspacing="0" class="sort-table" align="right">
+    <tr>
+        <td valign="middle">
+            <!-- pagnation -->
+            <div class="pagnation">
+                </div>
+            <!-- /pagnation -->
+        </td>
+    </tr>
+</table><!-- /Pagnation -->
+    <div class="clr"><!--  --></div>
+</div>
+<!-- /secondary nav & pagnation area -->
+
+<!-- refinements -->
+<form action="http://intl.wetseal.com/catalog/thumbnail.jsp" method="get" name="refinementForm"><input type='hidden' name='form_state' value='refinementForm'/><input name="subCategoryId" type="hidden" value="207"/><input name="categoryId" type="hidden" value="109"/><div id="refinements">
+        <div class="text">Sort By:</div>
+            <div class="drop-down">
+                <!-- drop-down menu -->
+                <select class="sort-by-input" onChange="javascript:document.refinementForm.submit()" name="sortByColumnName"><option value="SortByNewArrivals">Newest Arrivals (default)</option><option value="SortByPriceAscending">Price: Low to High</option><option value="SortByPriceDescending">Price: High to Low</option><option value="SortByMostLiked">Most Liked</option><option value="SortByBestSeller">Best Sellers</option></select><!-- /drop down -->
+            </div>
+        <div class="text">Size:</div>
+            <div class="drop-down"><select onChange="javascript:document.refinementForm.submit()" name="refinementValueId"><option>All</option><option value="57">shoe 10</option><option value="386">shoe 11</option><option value="261">shoe 5.5</option><option value="80">shoe 6</option><option value="70">shoe 6.5</option><option value="52">shoe 7</option><option value="56">shoe 7.5</option><option value="53">shoe 8</option><option value="54">shoe 8.5</option><option value="55">shoe 9</option></select></div>
+        <div class="text">Color:</div>
+            <div class="drop-down"><select onChange="javascript:document.refinementForm.submit()" name="refinementValueId"><option>All</option><option value="9">BLACK</option><option value="96">BROWN</option><option value="35">GOLD</option><option value="340">Gray</option><option value="68">PINK</option><option value="134">PURPLE</option><option value="82">RED</option><option value="36">SILVER</option><option value="34">WHITE</option></select></div>
+        <div class="clr"><!--  --></div>
+    </div>
+</form><!-- /refinements -->
+
+<!-- subCategory hdr -->
+<div id="subcat-hdr-product">
+    <img src="/assets/ws/images/global/secnav/txt-flats.gif" height="14" alt="Flats"/></div>
+<!-- /subCategory hdr -->
+<!-- TC1 -->
+<!-- /TC1 -->
+<div id="product-listing-container">
+    <!-- TC2 -->
+    <!-- /TC2 -->
+    <!-- TC3 -->
+    <!-- /TC3 -->
+    <!-- product display -->
+
+    <!-- single Product Display -->
+                <div class="product-display" id="43962">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43962"><img class="p-image has-quickview" src="/assets/ws/product_images/43255559278_th.jpg" alt="Leatherette Bow Flat"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43962&amp;color=COGNAC"><img name="color-swatch" src="/assets/ws/product_images/43255559278_s.gif" width="15px" height="15px" alt="COGNAC"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43962&amp;color=BLACK"><img name="color-swatch" src="/assets/ws/product_images/4325555910_s.gif" width="15px" height="15px" alt="BLACK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-43962" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('43962');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43962">Leatherette Bow Flat</a></span>
+                            <span class="category-product-price">
+                                    $12.80</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="43952">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43952"><img class="p-image has-quickview" src="/assets/ws/product_images/43255344100_th.jpg" alt="Crochet Flat"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43952&amp;color=WHITE"><img name="color-swatch" src="/assets/ws/product_images/43255344100_s.gif" width="15px" height="15px" alt="WHITE"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43952&amp;color=BLACK"><img name="color-swatch" src="/assets/ws/product_images/4325534410_s.gif" width="15px" height="15px" alt="BLACK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-43952" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('43952');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43952">Crochet Flat</a></span>
+                            <span class="category-product-price">
+                                    $12.80</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="43277">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43277"><img class="p-image has-quickview" src="/assets/ws/product_images/43167319600_th.jpg" alt="Basic Slip&#45;On Flat"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43277&amp;color=RED"><img name="color-swatch" src="/assets/ws/product_images/43167319600_s.gif" width="15px" height="15px" alt="RED"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43277&amp;color=BLACK"><img name="color-swatch" src="/assets/ws/product_images/4316731910_s.gif" width="15px" height="15px" alt="BLACK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-43277" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('43277');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=43277">Basic Slip-On Flat</a></span>
+                            <span class="category-product-price">
+                                    $14.80</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="42933">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42933"><img class="p-image has-quickview" src="/assets/ws/product_images/43613847660_th.jpg" alt="Plaid Slip On Sneaker"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42933&amp;color=RED"><img name="color-swatch" src="/assets/ws/product_images/43613847600_s.gif" width="15px" height="15px" alt="RED"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42933&amp;color=BLACK"><img name="color-swatch" src="/assets/ws/product_images/4361384710_s.gif" width="15px" height="15px" alt="BLACK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42933&amp;color=PINK"><img name="color-swatch" src="/assets/ws/product_images/43613847660_s.gif" width="15px" height="15px" alt="PINK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-42933" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('42933');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42933">Plaid Slip On Sneaker</a></span>
+                            <span class="category-product-price">Regularly
+                                    $14.80</span>
+                                <span class="category-product-pSale">Now
+                                    $7.99</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="42934">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42934"><img class="p-image has-quickview" src="/assets/ws/product_images/43613502660_th.jpg" alt="Zebra Slip On Sneaker"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42934&amp;color=PURPLE"><img name="color-swatch" src="/assets/ws/product_images/43613502400_s.gif" width="15px" height="15px" alt="PURPLE"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42934&amp;color=BLACK%2FWHITE"><img name="color-swatch" src="/assets/ws/product_images/436135023_s.gif" width="15px" height="15px" alt="BLACK/WHITE"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42934&amp;color=PINK"><img name="color-swatch" src="/assets/ws/product_images/43613502660_s.gif" width="15px" height="15px" alt="PINK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-42934" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('42934');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42934">Zebra Slip On Sneaker</a></span>
+                            <span class="category-product-price">Regularly
+                                    $14.80</span>
+                                <span class="category-product-pSale">Now
+                                    $7.99</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="42935">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42935"><img class="p-image has-quickview" src="/assets/ws/product_images/4361328175_th.jpg" alt="Jersey Boat Sneakers"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42935&amp;color=HEATHER+GREY"><img name="color-swatch" src="/assets/ws/product_images/4361328175_s.gif" width="15px" height="15px" alt="HEATHER GREY"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42935&amp;color=BLACK"><img name="color-swatch" src="/assets/ws/product_images/4361328110_s.gif" width="15px" height="15px" alt="BLACK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-42935" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('42935');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42935">Jersey Boat Sneakers</a></span>
+                            <span class="category-product-price">
+                                    $14.80</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="42908">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42908"><img class="p-image has-quickview" src="/assets/ws/product_images/4317768440_th.jpg" alt="Braid Cross Buckle Flat"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42908&amp;color=GREY"><img name="color-swatch" src="/assets/ws/product_images/4317768440_s.gif" width="15px" height="15px" alt="GREY"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42908&amp;color=BLACK"><img name="color-swatch" src="/assets/ws/product_images/4317768410_s.gif" width="15px" height="15px" alt="BLACK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-42908" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('42908');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42908">Braid Cross Buckle Flat</a></span>
+                            <span class="category-product-price">
+                                    $12.80</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="42776">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42776"><img class="p-image has-quickview" src="/assets/ws/product_images/4327477220_th.jpg" alt="Glitter Flat"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42776&amp;color=BLACK"><img name="color-swatch" src="/assets/ws/product_images/4327477210_s.gif" width="15px" height="15px" alt="BLACK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42776&amp;color=SILVER"><img name="color-swatch" src="/assets/ws/product_images/4327477220_s.gif" width="15px" height="15px" alt="SILVER"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-42776" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('42776');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42776">Glitter Flat</a></span>
+                            <span class="category-product-price">
+                                    $12.50</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="42779">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42779"><img class="p-image has-quickview" src="/assets/ws/product_images/42374077290_th.jpg" alt="Basic Floral Flat"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42779&amp;color=BROWN"><img name="color-swatch" src="/assets/ws/product_images/42374077290_s.gif" width="15px" height="15px" alt="BROWN"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42779&amp;color=BLACK"><img name="color-swatch" src="/assets/ws/product_images/4237407710_s.gif" width="15px" height="15px" alt="BLACK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-42779" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('42779');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42779">Basic Floral Flat</a></span>
+                            <span class="category-product-price">
+                                    $12.50</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="42811">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42811"><img class="p-image has-quickview" src="/assets/ws/product_images/43718542760_th.jpg" alt="Basic Ballet Bow Flat"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42811&amp;color=GREY"><img name="color-swatch" src="/assets/ws/product_images/4371854240_s.gif" width="15px" height="15px" alt="GREY"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42811&amp;color=BROWN"><img name="color-swatch" src="/assets/ws/product_images/43718542290_s.gif" width="15px" height="15px" alt="BROWN"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42811&amp;color=GOLD"><img name="color-swatch" src="/assets/ws/product_images/43718542760_s.gif" width="15px" height="15px" alt="GOLD"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42811&amp;color=BLACK"><img name="color-swatch" src="/assets/ws/product_images/4371854210_s.gif" width="15px" height="15px" alt="BLACK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-42811" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('42811');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42811">Basic Ballet Bow Flat</a></span>
+                            <span class="category-product-price">Regularly
+                                    $12.80</span>
+                                <span class="category-product-pSale">Now
+                                    $6.99</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="42628">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42628"><img class="p-image has-quickview" src="/assets/ws/product_images/4317081410_th.jpg" alt="Basic Wrap Flat"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42628&amp;color=BROWN"><img name="color-swatch" src="/assets/ws/product_images/43170814290_s.gif" width="15px" height="15px" alt="BROWN"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42628&amp;color=BLACK"><img name="color-swatch" src="/assets/ws/product_images/4317081410_s.gif" width="15px" height="15px" alt="BLACK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-42628" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('42628');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42628">Basic Wrap Flat</a></span>
+                            <span class="category-product-price">
+                                    $14.50</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="42377">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42377"><img class="p-image has-quickview" src="/assets/ws/product_images/4319852810_th.jpg" alt="Tonal Sequin Flat"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <img src="/assets/ws/images/landing/spacer.gif" width="15px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-42377" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('42377');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=42377">Tonal Sequin Flat</a></span>
+                            <span class="category-product-price">
+                                    $12.50</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="41863">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=41863"><img class="p-image has-quickview" src="/assets/ws/product_images/4320172340_th.jpg" alt="Bow Stud Flat"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=41863&amp;color=GREY"><img name="color-swatch" src="/assets/ws/product_images/4320172340_s.gif" width="15px" height="15px" alt="GREY"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=41863&amp;color=BLACK"><img name="color-swatch" src="/assets/ws/product_images/4320172310_s.gif" width="15px" height="15px" alt="BLACK"/></a><img src="/assets/ws/images/landing/spacer.gif" width="2px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-41863" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('41863');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=41863">Bow Stud Flat</a></span>
+                            <span class="category-product-price">
+                                    $12.50</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <!-- single Product Display -->
+                <div class="product-display" id="41864">
+                    <a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=41864"><img class="p-image has-quickview" src="/assets/ws/product_images/431990373_th.jpg" alt="Plaid Knot Flat"/></a><div class="product-display-info">
+                        <!-- color swatched include -->
+                            <span class="color-swatches">
+                                <table id="color-swatches-table" border="0" align="center">
+    <!-- spacer row -->
+    <tr>
+        <!-- color swatches -->
+        <td align="center" height="19px">
+            <img src="/assets/ws/images/landing/spacer.gif" width="15px" height="15px"/></td>
+    </tr>
+</table>
+</span>
+
+                        <div id="color-swatches-window-41864" class="color-swatches-window" onmouseout="javascript:startMCCloseWindowTimer('41864');">
+                            </div>
+                        <!-- /color swatched include -->
+
+                        <span class="category-product-name"><a href="/catalog/product.jsp?categoryId=109&amp;subCategoryId=207&amp;productId=41864">Plaid Knot Flat</a></span>
+                            <span class="category-product-price">
+                                    $12.50</span>
+                            </div>
+                </div>
+                <!-- /single Product Display -->
+            <div class="clr"><!--  --></div>
+</div>
+<!-- secondary nav & pagnation area -->
+<div class="secondary-area secondary-area-bottom-thumbnail">
+    <!-- secondary nav include -->
+    <span class="fl" style="margin: 2px 0 0 9px;">
+    <a class="sec-nav" href="/catalog/thumbnail.jsp?categoryId=109&amp;subCategoryId=208">Sandals</a>&nbsp;|&nbsp;<span id="sec-nav-active"><a class="sec-nav" href="/catalog/thumbnail.jsp?categoryId=109&amp;subCategoryId=207">Flats</a>&nbsp;|&nbsp;</span>
+        <a class="sec-nav" href="/catalog/thumbnail.jsp?categoryId=109&amp;subCategoryId=132">Pumps</a>&nbsp;|&nbsp;<a class="sec-nav" href="/catalog/thumbnail.jsp?categoryId=109&amp;subCategoryId=206">Boots</a></span>
+
+<!-- /secondary nav include -->
+    <!-- Pagnation -->
+    <table cellpadding="0" cellspacing="0" class="sort-table" align="right">
+    <tr>
+        <td valign="middle">
+            <!-- pagnation -->
+            <div class="pagnation">
+                </div>
+            <!-- /pagnation -->
+        </td>
+    </tr>
+</table><!-- /Pagnation -->
+    <div class="clr"><!--  --></div>
+</div>
+<!-- /secondary nav & pagnation area --></div>
+      <div class="clr"><!--  --></div>
+      <!-- /content -->
+
+      <!-- footer -->
+      <div id="footer-area">
+        <div class="clear1">&nbsp;</div><style type="text/css"> <!--body, td, th {    font-family: Arial, Helvetica, sans-serif;    font-size: 12px;    color: #666666;}body {    background-color: #FFFFFF;    margin-left: 0px;    margin-top: 0px;    margin-right: 0px;    margin-bottom: 0px;}a {    font-size: 12px;    color: #666666;}a:visited {    color: #666666;}a:hover {    color: #000000;}a:active {    color: #666666;}footerimg {    vertical-align: text-middle;}--> </style><div id="footer-content">    <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">        <tr>            <td>                <table width="980" border="0" cellspacing="0" cellpadding="5">                    <tr>                        <td colspan="9" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5" border="0"/></td>                    </tr>                    <tr>                        <td colspan="9" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5" border="0"/></td>                    </tr>                    <tr>                        <td colspan="2" align="left" valign="top">                            <img src="/assets/ws/images/global/footer-connect-with-us.gif" alt="Connect with Us" width="120" height="16"/>                        </td>                        <td width="0" align="left" valign="top"></td>                        <td colspan="2" align="left" valign="top">                            <img src="/assets/ws/images/global/footer-quickfind.gif" alt="Quick Find" width="74" height="15"/>                        </td>                        <td width="28" align="left" valign="top"></td>                        <td colspan="3" align="left" valign="top">                            <img src="/assets/ws/images/global/footer-help.gif" alt="Help" width="34" height="17"/>                        </td>                    </tr>                    <tr>                        <td colspan="2" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5" border="0"/>                        </td>                        <td align="left" valign="top"></td>                        <td colspan="2" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif"></td>                        <td align="left" valign="top"></td>                        <td colspan="3" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif"></td>                    </tr>                    <tr>                        <td width="95" align="left" valign="top"><a href="http://www.facebook.com/wetseal" target="_blank"><img                                src="/assets/ws/images/global/footer-facebook.gif" alt="Facebook" width="17" height="17" vspace="0" border="0"                                align="absmiddle"/></a> <a href="http://www.facebook.com/wetseal" target="_blank">Facebook</a></td>                        <td width="196" rowspan="4" align="left" valign="top">                            <span>&nbsp;</span>                            <form id="subscribeForm" action="/subscribe.cmd" method="post" name="subscribeForm">                                <input type='hidden' name='form_state' value='subscribeForm'/>                                <input name="userEmail" type="text" id="footer-email-input" value="Enter Email Address" size="20"                                       maxlength="80"/>                            </form>                        </td>                        <td rowspan="4" align="left" valign="top"></td>                        <td width="254" rowspan="4" align="left" valign="top" colspan="2">                        <!--<td width="141" rowspan="4" align="left" valign="top">-->                            <table width="206" border="0" cellpadding="2" cellspacing="0">                                <tr>                                    <td><a href="http://www.wetsealinc.com/" target="_blank">About Wet Seal</a></td>                                </tr>                                <tr>                                    <td>                                        <a href="/custserv/intl_custserv.jsp">International Customer Service</a>                                    </td>                                </tr>                            </table>                        </td>                        <td rowspan="4" align="left" valign="top"></td>                        <td width="317" rowspan="4" align="left" valign="top" colspan="3">                            <table width="284" border="0" cellpadding="2" cellspacing="0">                                <tr>                                    <td width="103"><a href="/custserv/intl_terms.jsp">Terms</a></td>                                </tr>                                <tr>                                    <td><a href="/custserv/intl_privacy.jsp">Privacy</a></td>                                </tr>                            </table>                        </td>                        </tr>                    <tr>                        <td align="left" valign="top">                            <a href="http://twitter.com/wetseal" target="_blank">                                <img src="/assets/ws/images/global/footer-twitter.gif" alt="Twitter" width="17" height="18" border="0" align="absmiddle"/>                            </a>                            <a href="http://twitter.com/wetseal" target="_blank">Twitter</a>                        </td>                    </tr>                    <tr>                        <td align="left" valign="top">                            <a href="http://www.youtube.com/user/wetseal" target="_blank">                                <img src="/assets/ws/images/global/footer-youtube.gif" alt="YouTube" width="17" height="18" border="0" align="absmiddle"/>                            </a>                            <a href="http://www.youtube.com/user/wetseal" target="_blank">YouTube </a>                        </td>                    </tr>                    <tr>                        <td align="left" valign="top">                            <a href="http://www.myspace.com/wetseal" target="_blank">                                <img src="/assets/ws/images/global/footer-myspace.gif" alt="MySpace" width="17" height="18" border="0" align="absmiddle"/>                            </a>                            <a href="http://www.myspace.com/wetseal" target="_blank">MySpace</a>                        </td>                    </tr>                    <tr>                        <td colspan="9" align="left" valign="middle">&nbsp;</td>                    </tr>                    <tr>                        <td colspan="9" align="left" valign="middle" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5"/>                        </td>                    </tr>                    <tr>                        <td colspan="9" align="right" valign="top">                            <table width="970" border="0" cellspacing="0" cellpadding="0">                                <tr>                                    <td width="494" align="left" valign="top">                                        <a href="/content.jsp?pageName=iRunway">                                            <img src="/assets/ws/images/global/App_Store_Badge_EN.png" alt="Available on the App Store" border="0"/>                                        </a>                                    </td>                                    <td width="476" align="right" valign="top">                                        <img src="/assets/ws/images/global/footer-paypal.gif" alt="PayPal" hspace="10" vspace="4" align="top"/>                                        <script src="https://sealserver.trustkeeper.net/compliance/seal_js.php?code=x4itlmfC7lKupWYsmKfZ1ViTHPZC2k&amp;style=normal&amp;size=105x54&amp;language=en"></script>                                        <noscript>                                            <a href="https://sealserver.trustkeeper.net/compliance/cert.php?code=x4itlmfC7lKupWYsmKfZ1ViTHPZC2k&amp;style=normal&amp;size=105x54&amp;language=en"                                               target="hATW">                                                <img src="https://sealserver.trustkeeper.net/compliance/seal.php?code=x4itlmfC7lKupWYsmKfZ1ViTHPZC2k&amp;style=normal&amp;size=105x54&amp;language=en"                                                        alt="Trusted Commerce" border="0"/></a>                                        </noscript>                                    </td>                                </tr>                            </table>                        </td>                    </tr>                </table>            </td>        </tr>    </table>    <p><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=325820756&amp;mt=8"></a></p></div><script type="text/javascript">    $(function()    {        $("#footer-email-input").focus(function()        {            if ($(this).val() == "Enter Email Address")            {                $(this).val("");            }        });        $("#footer-email-input").blur(function()        {            if ($(this).val() == "")            {                $(this).val("Enter Email Address");            }        });    });    function submitEmailSignup()    {        $("form#subscribeForm").submit();    }    ;</script></div>
+
+      <div class="machine-name">
+            EL08-Thu Feb 24 11:20:15 PST 2011<br /><br />
+      </div>
+
+      <div class="clr"><!--  --></div>
+      <!-- /footer -->
+    </div>
+  </div>
+
+  <!-- Fireclick, Inc - COPYRIGHT 1999-2007 - Please do not modify this code-->
+  <script type="text/javascript">
+  <!--
+  function handle() {
+     return true;
+  }
+  window.onerror = handle;
+
+  
+  var fc_host = 'intl.wetseal.com';
+  document.write('<scr' + 'ipt '
+        + 'src="' + ((location.protocol == 'http:') ? 'http:' : 'https:')
+        + '//a248.e.akamai.net/f/248/5462/3h/hints.netflame.cc/service/sc' + 'ript/' + fc_host + '"></scr' + 'ipt>');
+  function fcce() {
+     if (typeof(fcnf) != "undefined") fcnf();
+  }
+  var fcfn = window.onload;
+  function fcco() {
+     window.setTimeout("fcce();", 100);
+     fcfn();
+  }
+  window.onload = null == fcfn ? fcce : fcco;
+  // -->
+  </script>
+  <!-- Fireclick, Inc - COPYRIGHT 1999-2007 - Please do not modify this code-->
+
+</body>
+</html>

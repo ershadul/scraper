@@ -1,0 +1,933 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <link href="/assets/ws/favicon.ico" rel="shortcut icon"/><script src="/js/ws/jquery-1.2.1.min.js" type="text/javascript"></script><script src="/js/ws/jquery.vcenter.js" type="text/javascript"></script><script src="/js/ws/navigation.js" type="text/javascript"></script><link href="/css/ws/screen.css" rel="stylesheet" type="text/css" media="screen"/><lINK REL="stylesheet" HREF="/css/ws/header.css" TYPE="text/css" MEDIA=screen>
+
+  <script type="text/javascript">
+
+    function my_fc_rpt(params, tags) {
+  	if (typeof fc_rpt == "undefined") {
+	// try again in 1 second
+	setTimeout(function() { my_fc_rpt(params, tags) }, 1000);
+	} else {
+	// invoke fc_rpt now
+	fc_rpt(params, tags);
+	}
+  }
+
+function doSearchFocus(component)
+    {
+        var searchVal = component.value;//document.searchForm.keyword.value;
+        if (searchVal == "type search item here")
+        {
+            //document.searchForm.keyword.value = "";
+            component.value = "";
+        }
+    }
+
+function doSearchBlur(component)
+    {
+        var searchVal = component.value;//document.searchForm.keyword.value;
+        if (strTrim(searchVal) == '')
+        {
+            //document.searchForm.keyword.value = "enter keyword or item #";
+            component.value = "type search item here";
+        }
+    }
+  </script>
+
+
+  <style type="text/css">
+                @media
+                print
+                {
+                	div#header-area { display: none; }
+                	div#footer-area { display: none; }
+                	div#subcat-hdr-only { display: none; }
+                	body { background: none; background-color: #fff; }
+                }
+            </style>
+        <link href="/css/ws/print.css" rel="stylesheet" type="text/css" media="print"/><!--[if lt IE 7.]>
+  <style>
+    /* fixes all PNGs in IE6 */
+    img, .widget-ie6png { behavior: url(/css/ws/iepngfix.htc); }
+  </style>
+  <![endif]-->
+
+  <title></title>
+
+  </head>
+
+<body>
+  <div id="container">
+    <div id="container-padding">
+
+      <!-- header -->
+      <div id="header-area">
+        <form action="http://intl.wetseal.com/catalog/search.cmd?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3" method="get" name="searchForm"><input type='hidden' name='form_state' value='searchForm'/><a href="http://intl.wetseal.com/home.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img class="header-logo" name="logo" src="/assets/ws/images/global/ws_logo.gif" border="0" alt="Wet Seal"/></a><div id="header2-links"><a href="http://app.wetsealnews.com/prefcenter/signup.cfm"><img name="email" src="/assets/ws/images/global/btn-envelope.gif" border="0" alt="Email Sign Up"/></a>&nbsp;<a href="http://app.wetsealnews.com/prefcenter/signup.cfm">Email Sign Up!</a><img src="/assets/ws/images/global/header_vertline.gif" border="0"/><img src="/assets/ws/images/global/mobile-icon.gif" border="0"/><a href="http://intl.wetseal.com/content.jsp?pageName=WSMobile&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Mobile</a><img src="/assets/ws/images/global/header_vertline.gif" border="0"/><a href="http://intl.wetseal.com/utils/context.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Change Country</a>&nbsp;            <img src="/assets/ws/images/global/flags/BD.gif" border="0" alt="BANGLADESH"/><img src="/assets/ws/images/global/header_vertline.gif" border="0"/><input name="keyword" type="text" value="type search item here" size="20" maxlength="50"onFocus="doSearchFocus(this)"onBlur="doSearchBlur(this)"/><input id="btn-search-go" onClick="return doSearch()" type="image" src="/assets/ws/images/global/gobtn.png" alt="Search"/><img src="/assets/ws/images/global/header_vertline.gif" border="0"/>0 ITEMS <a href="/checkout/basket.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><span class="header-checkout">CHECKOUT</span></a><a href="/checkout/basket.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/shoppingbag-icon2.png" hspace="2"/></a><div class="clr"><!--  --></div>     </div>    </form><div id="nav-container"> <div id="top-nav-left"> 	<a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=739&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Plus Sizes</a><a href="http://intl.wetseal.com/content.jsp?pageName=ShopWithFriends&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Shop with Friends</a><a href="http://intl.wetseal.com/content.jsp?pageName=ShopByTrend&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Shop by Trend</a><a href="http://intl.wetseal.com/outfitter/community.cmd?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Browse Outfits</a><a href="http://intl.wetseal.com/content.jsp?pageName=HotSpot&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">The Hotspot</a><a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=1032&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Online Exclusives</a><a onClick="popupWindow(this,'_blank','location=0,status=0,menubar=0,toolbar=0,resizable=0,width=518,height=418'); return false;" href="/user/radio_playlist.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">WS Radio</a></div>            <div id="catalog-nav"><!-- 0  | 109 -->    <!-- 0 || 111-->	    <a href="http://intl.wetseal.com/catalog/justarrived.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-just arrived.gif" alt="Just Arrived"/></a><!-- 0 || 101-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=101&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-tops.gif" alt="Tops"/></a><!-- 0 || 176-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=176&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-tees & tanks.gif" alt="Tees & Tanks"/></a><!-- 0 || 110-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=110&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-sweaters.gif" alt="Sweaters"/></a><!-- 0 || 102-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=102&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-bottoms.gif" alt="Bottoms"/></a><!-- 0 || 104-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=104&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-dresses.gif" alt="Dresses"/></a><!-- 0 || 103-->	    <a href="http://intl.wetseal.com/catalog/denim.jsp?categoryId=103&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-denim.gif" alt="Denim"/></a><!-- 0 || 451-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=451&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-jackets.gif" alt="Jackets"/></a><!-- 0 || 106-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=106&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-accessories.gif" alt="Accessories"/></a><!-- 0 || 109-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=109&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-shoes.gif" alt="Shoes"/></a><!-- 0 || 107-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=107&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-intimates.gif" alt="Intimates"/></a><!-- 0 || 178-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=178&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-sale.gif" alt="Sale"/></a><!-- 0 || 809-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=809&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-clearance.gif" alt="Clearance"/></a></div></div><!-- Navigational Header Ends--></div>
+      <div class="clr"><!--  --></div>
+      <!-- /header  gmax -->
+
+      <!-- content -->
+      <div id="content-area">
+        <html>
+<head><title>Context Chooser</title>
+    <script type='text/javascript' src='../js/dwr/interface/context.js'></script>
+    <script type='text/javascript' src='../js/dwr/engine.js'></script>
+    <script type='text/javascript' src='../js/dwr/util.js'></script>
+    <link href="../css/ws/intl.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+        var countryCode = "";
+
+        // function to get the value of the cookie
+        function getCookie(c_name)
+        {
+            if (document.cookie.length > 0)
+            {
+                c_start = document.cookie.indexOf(c_name + "=");
+                if (c_start != -1)
+                {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start);
+                    if (c_end == -1) c_end = document.cookie.length;
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return "";
+        }
+
+        function setCountry()
+        {
+            countryCode = document.getElementById("countrySelection").value;
+            //alert("in setCountry, countryCode = " + countryCode);
+            context.updateCountryAndCurrency('org.apache.catalina.core.ApplicationHttpRequest@70b6bddf', 'org.apache.jasper.runtime.ServletResponseWrapperInclude@6d6bb548', countryCode, goToSelectedCountry);
+        }
+
+        function backToUSSite()
+        {
+            countryCode = "US";
+            context.updateCountryAndCurrency('org.apache.catalina.core.ApplicationHttpRequest@70b6bddf', 'org.apache.jasper.runtime.ServletResponseWrapperInclude@6d6bb548', countryCode, goToUSSite);
+        }
+
+        function goToSite()
+        {
+            var prevPage = "/home.jsp";
+            //alert("prevPage: " + prevPage);
+            window.location = prevPage;
+            //window.location = "/home.jsp";
+        }
+
+        function goToUSSite()
+        {
+            // save and check for cookie
+            var pipelineSessionId = getCookie('PIPELINE_SESSION_ID');
+            var url = "";
+            if (pipelineSessionId != null && pipelineSessionId != "")
+            {
+                url = "http://www.wetseal.com/home.jsp?pipeline_session_id=" + pipelineSessionId;
+            }
+            else
+            {
+                url = "http://www.wetseal.com/home.jsp";
+            }
+            //alert("prevPage: " + prevPage);
+            window.location = url;
+            //window.location = prevPage;
+            //window.location = "/home.jsp";
+        }
+
+        function goToSelectedCountry(str)
+        {
+            //alert("in goToSelectedCountry str=" + str);
+        }
+
+    </script>
+</head>
+<body>
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr bgcolor="black">
+        <td colspan="2" align="left" valign="center" height="50px">&nbsp;&nbsp;&nbsp;
+            <img src="/assets/ws/images/landing/title-intlship.gif" alt="International Shipping"/>
+        </td>
+    </tr>
+    <tr>
+        <td class="regular-gray-text">
+            <!--<img src="/assets/ws/images/landing/lp-intl-shipping.png" alt="International Shipping"/>-->
+            <table class="shipping-table-text" border="0" cellpadding="5">
+                <tr>
+                    <td><img src="/assets/ws/images/global/bullet.gif" alt="bullet"/></td>
+                    <td class="regular-gray-text">
+                        Shop Wetseal.com in over 80 countries and over 40 currencies
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/ws/images/global/bullet.gif" alt="bullet"/></td>
+                    <td class="regular-gray-text">
+                        Ability to view your order total (including shipping fees, custom tariffs, and taxes) at checkout
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/ws/images/global/bullet.gif" alt="bullet"/></td>
+                    <td class="regular-gray-text">
+                        All prices will be displayed in your preferred currency
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/ws/images/global/bullet.gif" alt="bullet"/></td>
+                    <td class="regular-gray-text">
+                        The total is guaranteed at the exchange rate set when your order is placed
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/ws/images/global/bullet.gif" alt="bullet"/></td>
+                    <td class="regular-gray-text">
+                        No additional payment will be required upon delivery of your order
+                    </td>
+                </tr>
+                <tr height="70px">
+                    <td colspan="2" class="regular-gray-text" align="center">
+                        <strong>Please Note:</strong> Not all products sold on Wetseal.com can be shipped internationally and order total cannot
+                        exceed U.S. $2500
+                    </td>
+                </tr>
+                <tr height="100px">
+                    <td colspan="2" class="regular-gray-text" align="center">
+                        <strong>From the pull down menu below,</strong> please select the country you would like to ship to and the currency you would
+                        like
+                        to shop in, then click <em>'Save & Continue Shopping</em>'. If you have any questions, please contact us at 1.949.206.4988.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td rowspan="2" width="362px">
+            <img src="/assets/ws/images/landing/hero-intlship.jpg" alt="International Shipping"/>
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><p>
+            <table width="410" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                    <td align="center" valign="top" colspan="2">Select Country:</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" colspan="2">
+                        <label>
+                            <select id="countrySelection" class="selectBox" onChange="setCountry();">
+                                <option id="AG" value="AG"
+                                         >ANTIGUA AND BARBUDA - US Dollar (USD)</option>
+                                <option id="AR" value="AR"
+                                         >ARGENTINA - Argentine Peso (ARS)</option>
+                                <option id="AU" value="AU"
+                                         >AUSTRALIA - Australian Dollar (AUD)</option>
+                                <option id="AT" value="AT"
+                                         >AUSTRIA - Euro (EUR)</option>
+                                <option id="BH" value="BH"
+                                         >BAHRAIN - US Dollar (USD)</option>
+                                <option id="BD" value="BD"
+                                        
+                                        selected
+                                         >BANGLADESH - US Dollar (USD)</option>
+                                <option id="BB" value="BB"
+                                         >BARBADOS - US Dollar (USD)</option>
+                                <option id="BE" value="BE"
+                                         >BELGIUM - Euro (EUR)</option>
+                                <option id="BZ" value="BZ"
+                                         >BELIZE - US Dollar (USD)</option>
+                                <option id="BO" value="BO"
+                                         >BOLIVIA - US Dollar (USD)</option>
+                                <option id="BR" value="BR"
+                                         >BRAZIL - Brazillian Real (BRL)</option>
+                                <option id="BN" value="BN"
+                                         >BRUNEI - US Dollar (USD)</option>
+                                <option id="BG" value="BG"
+                                         >BULGARIA - Euro (EUR)</option>
+                                <option id="KH" value="KH"
+                                         >CAMBODIA - US Dollar (USD)</option>
+                                <option id="CA" value="CA"
+                                         >CANADA - Canadian Dollar (CAD)</option>
+                                <option id="CL" value="CL"
+                                         >CHILE - Chilean Peso (CLP)</option>
+                                <option id="CN" value="CN"
+                                         >CHINA - US Dollar (USD)</option>
+                                <option id="CO" value="CO"
+                                         >COLOMBIA - Colombian Peso (COP)</option>
+                                <option id="CR" value="CR"
+                                         >COSTA RICA - US Dollar (USD)</option>
+                                <option id="CY" value="CY"
+                                         >CYPRUS - Euro (EUR)</option>
+                                <option id="CZ" value="CZ"
+                                         >CZECH REPUBLIC - Czech Koruna (CZK)</option>
+                                <option id="DK" value="DK"
+                                         >DENMARK - Danish Krone (DKK)</option>
+                                <option id="DM" value="DM"
+                                         >DOMINICA - US Dollar (USD)</option>
+                                <option id="DO" value="DO"
+                                         >DOMINICAN REPUBLIC - US Dollar (USD)</option>
+                                <option id="EC" value="EC"
+                                         >ECUADOR - US Dollar (USD)</option>
+                                <option id="EG" value="EG"
+                                         >EGYPT - Egyptian Pound (EGP)</option>
+                                <option id="SV" value="SV"
+                                         >EL SALVADOR - US Dollar (USD)</option>
+                                <option id="EE" value="EE"
+                                         >ESTONIA - Euro (EUR)</option>
+                                <option id="FI" value="FI"
+                                         >FINLAND - Euro (EUR)</option>
+                                <option id="FR" value="FR"
+                                         >FRANCE - Euro (EUR)</option>
+                                <option id="DE" value="DE"
+                                         >GERMANY - Euro (EUR)</option>
+                                <option id="GR" value="GR"
+                                         >GREECE - Euro (EUR)</option>
+                                <option id="GD" value="GD"
+                                         >GRENADA - US Dollar (USD)</option>
+                                <option id="GT" value="GT"
+                                         >GUATEMALA - US Dollar (USD)</option>
+                                <option id="HT" value="HT"
+                                         >HAITI - US Dollar (USD)</option>
+                                <option id="HN" value="HN"
+                                         >HONDURAS - US Dollar (USD)</option>
+                                <option id="HK" value="HK"
+                                         >HONG KONG - Hong Kong Dollar (HKD)</option>
+                                <option id="HU" value="HU"
+                                         >HUNGARY - Hungarian Forint (HUF)</option>
+                                <option id="IN" value="IN"
+                                         >INDIA - Indian Rupee (INR)</option>
+                                <option id="ID" value="ID"
+                                         >INDONESIA - Indonesian Rupiah (IDR)</option>
+                                <option id="IE" value="IE"
+                                         >IRELAND - Euro (EUR)</option>
+                                <option id="IL" value="IL"
+                                         >ISRAEL - Israeli Shekel (ILS)</option>
+                                <option id="IT" value="IT"
+                                         >ITALY - Euro (EUR)</option>
+                                <option id="JM" value="JM"
+                                         >JAMAICA - US Dollar (USD)</option>
+                                <option id="JP" value="JP"
+                                         >JAPAN - Japanese Yen (JPY)</option>
+                                <option id="JO" value="JO"
+                                         >JORDAN - US Dollar (USD)</option>
+                                <option id="KW" value="KW"
+                                         >KUWAIT - Kuwaiti Dinar (KWD)</option>
+                                <option id="LV" value="LV"
+                                         >LATVIA - Latvian Lats (LVL)</option>
+                                <option id="LI" value="LI"
+                                         >LIECHTENSTEIN - Euro (EUR)</option>
+                                <option id="LT" value="LT"
+                                         >LITHUANIA - Lithuanian Litas (LTL)</option>
+                                <option id="LU" value="LU"
+                                         >LUXEMBOURG - Euro (EUR)</option>
+                                <option id="MO" value="MO"
+                                         >MACAU - Hong Kong Dollar (HKD)</option>
+                                <option id="MV" value="MV"
+                                         >MALDIVES - US Dollar (USD)</option>
+                                <option id="MT" value="MT"
+                                         >MALTA - Euro (EUR)</option>
+                                <option id="MX" value="MX"
+                                         >MEXICO - Mexican Peso (MXN)</option>
+                                <option id="MC" value="MC"
+                                         >MONACO - Euro (EUR)</option>
+                                <option id="MA" value="MA"
+                                         >MOROCCO - Moroccan Dirham (MAD)</option>
+                                <option id="NP" value="NP"
+                                         >NEPAL - Indian Rupee (INR)</option>
+                                <option id="NL" value="NL"
+                                         >NETHERLANDS - Euro (EUR)</option>
+                                <option id="NZ" value="NZ"
+                                         >NEW ZEALAND - New Zealand Dollar (NZD)</option>
+                                <option id="NI" value="NI"
+                                         >NICARAGUA - US Dollar (USD)</option>
+                                <option id="NO" value="NO"
+                                         >NORWAY - Norwegian Krone (NOK)</option>
+                                <option id="OM" value="OM"
+                                         >OMAN - Omani Rial (OMR)</option>
+                                <option id="PK" value="PK"
+                                         >PAKISTAN - US Dollar (USD)</option>
+                                <option id="PA" value="PA"
+                                         >PANAMA - US Dollar (USD)</option>
+                                <option id="PY" value="PY"
+                                         >PARAGUAY - US Dollar (USD)</option>
+                                <option id="PE" value="PE"
+                                         >PERU - Peruvian Nuevo Sol (PEN)</option>
+                                <option id="PH" value="PH"
+                                         >PHILIPPINES - Philippine Peso (PHP)</option>
+                                <option id="PL" value="PL"
+                                         >POLAND - Polish Zloty (PLN)</option>
+                                <option id="PT" value="PT"
+                                         >PORTUGAL - Euro (EUR)</option>
+                                <option id="QA" value="QA"
+                                         >QATAR - Qatari Riyal (QAR)</option>
+                                <option id="RO" value="RO"
+                                         >ROMANIA - Euro (EUR)</option>
+                                <option id="SA" value="SA"
+                                         >SAUDI ARABIA - Saudi Riyal (SAR)</option>
+                                <option id="SG" value="SG"
+                                         >SINGAPORE - Singapore Dollar (SGD)</option>
+                                <option id="SK" value="SK"
+                                         >SLOVAKIA - Euro (EUR)</option>
+                                <option id="SI" value="SI"
+                                         >SLOVENIA - Euro (EUR)</option>
+                                <option id="ZA" value="ZA"
+                                         >SOUTH AFRICA - South African Rand (ZAR)</option>
+                                <option id="KR" value="KR"
+                                         >SOUTH KOREA - Korean Won (KRW)</option>
+                                <option id="ES" value="ES"
+                                         >SPAIN - Euro (EUR)</option>
+                                <option id="LK" value="LK"
+                                         >SRI LANKA - US Dollar (USD)</option>
+                                <option id="SR" value="SR"
+                                         >SURINAME - US Dollar (USD)</option>
+                                <option id="SE" value="SE"
+                                         >SWEDEN - Swedish Krona (SEK)</option>
+                                <option id="CH" value="CH"
+                                         >SWITZERLAND - Swiss Franc (CHF)</option>
+                                <option id="TW" value="TW"
+                                         >TAIWAN - Taiwan Dollar (TWD)</option>
+                                <option id="TH" value="TH"
+                                         >THAILAND - Thai Baht (THB)</option>
+                                <option id="TT" value="TT"
+                                         >TRINIDAD AND TOBAGO - US Dollar (USD)</option>
+                                <option id="TR" value="TR"
+                                         >TURKEY - Turkish Lira (TRY)</option>
+                                <option id="UA" value="UA"
+                                         >UKRAINE - Ukraine Hryvnia (UAH)</option>
+                                <option id="AE" value="AE"
+                                         >UNITED ARAB EMIRATES - United Arab Emirates Dirham (AED)</option>
+                                <option id="GB" value="GB"
+                                         >UNITED KINGDOM - British Pound (GBP)</option>
+                                <option id="VN" value="VN"
+                                         >VIETNAM - US Dollar (USD)</option>
+                                </select>
+                        </label>
+                    </td>
+                </tr>
+                <tr height="60px">
+                    <td width="50%" align="center">
+                        <a href="javascript:backToUSSite();">
+                            <u><span class="backToUsText">Back to U.S. site</span></u>
+                        </a>
+                    </td>
+                    <td width="50%" align="center">
+                        <a href="javascript:goToSite();">
+                            <img src="/assets/ws/images/landing/btn-saveandcontinue.gif" alt="Save &amp; Continue Shopping" hspace="5"/>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+</div>
+      <div class="clr"><!--  --></div>
+      <!-- /content -->
+
+      <!-- footer -->
+      <div id="footer-area">
+        <div class="clear1">&nbsp;</div><style type="text/css"> <!--body, td, th {    font-family: Arial, Helvetica, sans-serif;    font-size: 12px;    color: #666666;}body {    background-color: #FFFFFF;    margin-left: 0px;    margin-top: 0px;    margin-right: 0px;    margin-bottom: 0px;}a {    font-size: 12px;    color: #666666;}a:visited {    color: #666666;}a:hover {    color: #000000;}a:active {    color: #666666;}footerimg {    vertical-align: text-middle;}--> </style><div id="footer-content">    <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">        <tr>            <td>                <table width="980" border="0" cellspacing="0" cellpadding="5">                    <tr>                        <td colspan="9" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5" border="0"/></td>                    </tr>                    <tr>                        <td colspan="9" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5" border="0"/></td>                    </tr>                    <tr>                        <td colspan="2" align="left" valign="top">                            <img src="/assets/ws/images/global/footer-connect-with-us.gif" alt="Connect with Us" width="120" height="16"/>                        </td>                        <td width="0" align="left" valign="top"></td>                        <td colspan="2" align="left" valign="top">                            <img src="/assets/ws/images/global/footer-quickfind.gif" alt="Quick Find" width="74" height="15"/>                        </td>                        <td width="28" align="left" valign="top"></td>                        <td colspan="3" align="left" valign="top">                            <img src="/assets/ws/images/global/footer-help.gif" alt="Help" width="34" height="17"/>                        </td>                    </tr>                    <tr>                        <td colspan="2" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5" border="0"/>                        </td>                        <td align="left" valign="top"></td>                        <td colspan="2" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif"></td>                        <td align="left" valign="top"></td>                        <td colspan="3" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif"></td>                    </tr>                    <tr>                        <td width="95" align="left" valign="top"><a href="http://www.facebook.com/wetseal" target="_blank"><img                                src="/assets/ws/images/global/footer-facebook.gif" alt="Facebook" width="17" height="17" vspace="0" border="0"                                align="absmiddle"/></a> <a href="http://www.facebook.com/wetseal" target="_blank">Facebook</a></td>                        <td width="196" rowspan="4" align="left" valign="top">                            <span>&nbsp;</span>                            <form id="subscribeForm" action="/subscribe.cmd" method="post" name="subscribeForm">                                <input type='hidden' name='form_state' value='subscribeForm'/>                                <input name="userEmail" type="text" id="footer-email-input" value="Enter Email Address" size="20"                                       maxlength="80"/>                            </form>                        </td>                        <td rowspan="4" align="left" valign="top"></td>                        <td width="254" rowspan="4" align="left" valign="top" colspan="2">                        <!--<td width="141" rowspan="4" align="left" valign="top">-->                            <table width="206" border="0" cellpadding="2" cellspacing="0">                                <tr>                                    <td><a href="http://www.wetsealinc.com/" target="_blank">About Wet Seal</a></td>                                </tr>                                <tr>                                    <td>                                        <a href="/custserv/intl_custserv.jsp">International Customer Service</a>                                    </td>                                </tr>                            </table>                        </td>                        <td rowspan="4" align="left" valign="top"></td>                        <td width="317" rowspan="4" align="left" valign="top" colspan="3">                            <table width="284" border="0" cellpadding="2" cellspacing="0">                                <tr>                                    <td width="103"><a href="/custserv/intl_terms.jsp">Terms</a></td>                                </tr>                                <tr>                                    <td><a href="/custserv/intl_privacy.jsp">Privacy</a></td>                                </tr>                            </table>                        </td>                        </tr>                    <tr>                        <td align="left" valign="top">                            <a href="http://twitter.com/wetseal" target="_blank">                                <img src="/assets/ws/images/global/footer-twitter.gif" alt="Twitter" width="17" height="18" border="0" align="absmiddle"/>                            </a>                            <a href="http://twitter.com/wetseal" target="_blank">Twitter</a>                        </td>                    </tr>                    <tr>                        <td align="left" valign="top">                            <a href="http://www.youtube.com/user/wetseal" target="_blank">                                <img src="/assets/ws/images/global/footer-youtube.gif" alt="YouTube" width="17" height="18" border="0" align="absmiddle"/>                            </a>                            <a href="http://www.youtube.com/user/wetseal" target="_blank">YouTube </a>                        </td>                    </tr>                    <tr>                        <td align="left" valign="top">                            <a href="http://www.myspace.com/wetseal" target="_blank">                                <img src="/assets/ws/images/global/footer-myspace.gif" alt="MySpace" width="17" height="18" border="0" align="absmiddle"/>                            </a>                            <a href="http://www.myspace.com/wetseal" target="_blank">MySpace</a>                        </td>                    </tr>                    <tr>                        <td colspan="9" align="left" valign="middle">&nbsp;</td>                    </tr>                    <tr>                        <td colspan="9" align="left" valign="middle" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5"/>                        </td>                    </tr>                    <tr>                        <td colspan="9" align="right" valign="top">                            <table width="970" border="0" cellspacing="0" cellpadding="0">                                <tr>                                    <td width="494" align="left" valign="top">                                        <a href="/content.jsp?pageName=iRunway">                                            <img src="/assets/ws/images/global/App_Store_Badge_EN.png" alt="Available on the App Store" border="0"/>                                        </a>                                    </td>                                    <td width="476" align="right" valign="top">                                        <img src="/assets/ws/images/global/footer-paypal.gif" alt="PayPal" hspace="10" vspace="4" align="top"/>                                        <script src="https://sealserver.trustkeeper.net/compliance/seal_js.php?code=x4itlmfC7lKupWYsmKfZ1ViTHPZC2k&amp;style=normal&amp;size=105x54&amp;language=en"></script>                                        <noscript>                                            <a href="https://sealserver.trustkeeper.net/compliance/cert.php?code=x4itlmfC7lKupWYsmKfZ1ViTHPZC2k&amp;style=normal&amp;size=105x54&amp;language=en"                                               target="hATW">                                                <img src="https://sealserver.trustkeeper.net/compliance/seal.php?code=x4itlmfC7lKupWYsmKfZ1ViTHPZC2k&amp;style=normal&amp;size=105x54&amp;language=en"                                                        alt="Trusted Commerce" border="0"/></a>                                        </noscript>                                    </td>                                </tr>                            </table>                        </td>                    </tr>                </table>            </td>        </tr>    </table>    <p><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=325820756&amp;mt=8"></a></p></div><script type="text/javascript">    $(function()    {        $("#footer-email-input").focus(function()        {            if ($(this).val() == "Enter Email Address")            {                $(this).val("");            }        });        $("#footer-email-input").blur(function()        {            if ($(this).val() == "")            {                $(this).val("Enter Email Address");            }        });    });    function submitEmailSignup()    {        $("form#subscribeForm").submit();    }    ;</script></div>
+
+      <div class="machine-name">
+            EL08-Wed Feb 16 11:06:51 PST 2011<br /><br />
+      </div>
+
+      <div class="clr"><!--  --></div>
+      <!-- /footer -->
+    </div>
+  </div>
+
+  <!-- Fireclick, Inc - COPYRIGHT 1999-2007 - Please do not modify this code-->
+  <script type="text/javascript">
+  <!--
+  function handle() {
+     return true;
+  }
+  window.onerror = handle;
+
+  
+  var fc_host = 'intl.wetseal.com';
+  document.write('<scr' + 'ipt '
+        + 'src="' + ((location.protocol == 'http:') ? 'http:' : 'https:')
+        + '//a248.e.akamai.net/f/248/5462/3h/hints.netflame.cc/service/sc' + 'ript/' + fc_host + '"></scr' + 'ipt>');
+  function fcce() {
+     if (typeof(fcnf) != "undefined") fcnf();
+  }
+  var fcfn = window.onload;
+  function fcco() {
+     window.setTimeout("fcce();", 100);
+     fcfn();
+  }
+  window.onload = null == fcfn ? fcce : fcco;
+  // -->
+  </script>
+  <!-- Fireclick, Inc - COPYRIGHT 1999-2007 - Please do not modify this code-->
+
+</body>
+</html><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+  <link href="/assets/ws/favicon.ico" rel="shortcut icon"/><script src="/js/ws/jquery-1.2.1.min.js" type="text/javascript"></script><script src="/js/ws/jquery.vcenter.js" type="text/javascript"></script><script src="/js/ws/navigation.js" type="text/javascript"></script><link href="/css/ws/screen.css" rel="stylesheet" type="text/css" media="screen"/><lINK REL="stylesheet" HREF="/css/ws/header.css" TYPE="text/css" MEDIA=screen>
+
+  <script type="text/javascript">
+
+    function my_fc_rpt(params, tags) {
+  	if (typeof fc_rpt == "undefined") {
+	// try again in 1 second
+	setTimeout(function() { my_fc_rpt(params, tags) }, 1000);
+	} else {
+	// invoke fc_rpt now
+	fc_rpt(params, tags);
+	}
+  }
+
+function doSearchFocus(component)
+    {
+        var searchVal = component.value;//document.searchForm.keyword.value;
+        if (searchVal == "type search item here")
+        {
+            //document.searchForm.keyword.value = "";
+            component.value = "";
+        }
+    }
+
+function doSearchBlur(component)
+    {
+        var searchVal = component.value;//document.searchForm.keyword.value;
+        if (strTrim(searchVal) == '')
+        {
+            //document.searchForm.keyword.value = "enter keyword or item #";
+            component.value = "type search item here";
+        }
+    }
+  </script>
+
+
+  <style type="text/css">
+                @media
+                print
+                {
+                	div#header-area { display: none; }
+                	div#footer-area { display: none; }
+                	div#subcat-hdr-only { display: none; }
+                	body { background: none; background-color: #fff; }
+                }
+            </style>
+        <link href="/css/ws/print.css" rel="stylesheet" type="text/css" media="print"/><!--[if lt IE 7.]>
+  <style>
+    /* fixes all PNGs in IE6 */
+    img, .widget-ie6png { behavior: url(/css/ws/iepngfix.htc); }
+  </style>
+  <![endif]-->
+
+  <title></title>
+
+  </head>
+
+<body>
+  <div id="container">
+    <div id="container-padding">
+
+      <!-- header -->
+      <div id="header-area">
+        <form action="http://intl.wetseal.com/catalog/search.cmd?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3" method="get" name="searchForm"><input type='hidden' name='form_state' value='searchForm'/><a href="http://intl.wetseal.com/home.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img class="header-logo" name="logo" src="/assets/ws/images/global/ws_logo.gif" border="0" alt="Wet Seal"/></a><div id="header2-links"><a href="http://app.wetsealnews.com/prefcenter/signup.cfm"><img name="email" src="/assets/ws/images/global/btn-envelope.gif" border="0" alt="Email Sign Up"/></a>&nbsp;<a href="http://app.wetsealnews.com/prefcenter/signup.cfm">Email Sign Up!</a><img src="/assets/ws/images/global/header_vertline.gif" border="0"/><img src="/assets/ws/images/global/mobile-icon.gif" border="0"/><a href="http://intl.wetseal.com/content.jsp?pageName=WSMobile&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Mobile</a><img src="/assets/ws/images/global/header_vertline.gif" border="0"/><a href="http://intl.wetseal.com/utils/context.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Change Country</a>&nbsp;            <img src="/assets/ws/images/global/flags/BD.gif" border="0" alt="BANGLADESH"/><img src="/assets/ws/images/global/header_vertline.gif" border="0"/><input name="keyword" type="text" value="type search item here" size="20" maxlength="50"onFocus="doSearchFocus(this)"onBlur="doSearchBlur(this)"/><input id="btn-search-go" onClick="return doSearch()" type="image" src="/assets/ws/images/global/gobtn.png" alt="Search"/><img src="/assets/ws/images/global/header_vertline.gif" border="0"/>0 ITEMS <a href="/checkout/basket.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><span class="header-checkout">CHECKOUT</span></a><a href="/checkout/basket.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/shoppingbag-icon2.png" hspace="2"/></a><div class="clr"><!--  --></div>     </div>    </form><div id="nav-container"> <div id="top-nav-left"> 	<a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=739&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Plus Sizes</a><a href="http://intl.wetseal.com/content.jsp?pageName=ShopWithFriends&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Shop with Friends</a><a href="http://intl.wetseal.com/content.jsp?pageName=ShopByTrend&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Shop by Trend</a><a href="http://intl.wetseal.com/outfitter/community.cmd?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Browse Outfits</a><a href="http://intl.wetseal.com/content.jsp?pageName=HotSpot&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">The Hotspot</a><a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=1032&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">Online Exclusives</a><a onClick="popupWindow(this,'_blank','location=0,status=0,menubar=0,toolbar=0,resizable=0,width=518,height=418'); return false;" href="/user/radio_playlist.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3">WS Radio</a></div>            <div id="catalog-nav"><!-- 0  | 109 -->    <!-- 0 || 111-->	    <a href="http://intl.wetseal.com/catalog/justarrived.jsp?PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-just arrived.gif" alt="Just Arrived"/></a><!-- 0 || 101-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=101&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-tops.gif" alt="Tops"/></a><!-- 0 || 176-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=176&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-tees & tanks.gif" alt="Tees & Tanks"/></a><!-- 0 || 110-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=110&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-sweaters.gif" alt="Sweaters"/></a><!-- 0 || 102-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=102&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-bottoms.gif" alt="Bottoms"/></a><!-- 0 || 104-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=104&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-dresses.gif" alt="Dresses"/></a><!-- 0 || 103-->	    <a href="http://intl.wetseal.com/catalog/denim.jsp?categoryId=103&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-denim.gif" alt="Denim"/></a><!-- 0 || 451-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=451&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-jackets.gif" alt="Jackets"/></a><!-- 0 || 106-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=106&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-accessories.gif" alt="Accessories"/></a><!-- 0 || 109-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=109&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-shoes.gif" alt="Shoes"/></a><!-- 0 || 107-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=107&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-intimates.gif" alt="Intimates"/></a><!-- 0 || 178-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=178&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-sale.gif" alt="Sale"/></a><!-- 0 || 809-->	    <a href="http://intl.wetseal.com/catalog/category.jsp?categoryId=809&PIPELINE_SESSION_ID=2fde25f17f00000156a96eba5a6872c3"><img src="/assets/ws/images/global/nav/btn-clearance.gif" alt="Clearance"/></a></div></div><!-- Navigational Header Ends--></div>
+      <div class="clr"><!--  --></div>
+      <!-- /header  gmax -->
+
+      <!-- content -->
+      <div id="content-area">
+        <html>
+<head><title>Context Chooser</title>
+    <script type='text/javascript' src='../js/dwr/interface/context.js'></script>
+    <script type='text/javascript' src='../js/dwr/engine.js'></script>
+    <script type='text/javascript' src='../js/dwr/util.js'></script>
+    <link href="../css/ws/intl.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+        var countryCode = "";
+
+        // function to get the value of the cookie
+        function getCookie(c_name)
+        {
+            if (document.cookie.length > 0)
+            {
+                c_start = document.cookie.indexOf(c_name + "=");
+                if (c_start != -1)
+                {
+                    c_start = c_start + c_name.length + 1;
+                    c_end = document.cookie.indexOf(";", c_start);
+                    if (c_end == -1) c_end = document.cookie.length;
+                    return unescape(document.cookie.substring(c_start, c_end));
+                }
+            }
+            return "";
+        }
+
+        function setCountry()
+        {
+            countryCode = document.getElementById("countrySelection").value;
+            //alert("in setCountry, countryCode = " + countryCode);
+            context.updateCountryAndCurrency('org.apache.catalina.core.ApplicationHttpRequest@70b6bddf', 'org.apache.jasper.runtime.ServletResponseWrapperInclude@6d6bb548', countryCode, goToSelectedCountry);
+        }
+
+        function backToUSSite()
+        {
+            countryCode = "US";
+            context.updateCountryAndCurrency('org.apache.catalina.core.ApplicationHttpRequest@70b6bddf', 'org.apache.jasper.runtime.ServletResponseWrapperInclude@6d6bb548', countryCode, goToUSSite);
+        }
+
+        function goToSite()
+        {
+            var prevPage = "/home.jsp";
+            //alert("prevPage: " + prevPage);
+            window.location = prevPage;
+            //window.location = "/home.jsp";
+        }
+
+        function goToUSSite()
+        {
+            // save and check for cookie
+            var pipelineSessionId = getCookie('PIPELINE_SESSION_ID');
+            var url = "";
+            if (pipelineSessionId != null && pipelineSessionId != "")
+            {
+                url = "http://www.wetseal.com/home.jsp?pipeline_session_id=" + pipelineSessionId;
+            }
+            else
+            {
+                url = "http://www.wetseal.com/home.jsp";
+            }
+            //alert("prevPage: " + prevPage);
+            window.location = url;
+            //window.location = prevPage;
+            //window.location = "/home.jsp";
+        }
+
+        function goToSelectedCountry(str)
+        {
+            //alert("in goToSelectedCountry str=" + str);
+        }
+
+    </script>
+</head>
+<body>
+<table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr bgcolor="black">
+        <td colspan="2" align="left" valign="center" height="50px">&nbsp;&nbsp;&nbsp;
+            <img src="/assets/ws/images/landing/title-intlship.gif" alt="International Shipping"/>
+        </td>
+    </tr>
+    <tr>
+        <td class="regular-gray-text">
+            <!--<img src="/assets/ws/images/landing/lp-intl-shipping.png" alt="International Shipping"/>-->
+            <table class="shipping-table-text" border="0" cellpadding="5">
+                <tr>
+                    <td><img src="/assets/ws/images/global/bullet.gif" alt="bullet"/></td>
+                    <td class="regular-gray-text">
+                        Shop Wetseal.com in over 80 countries and over 40 currencies
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/ws/images/global/bullet.gif" alt="bullet"/></td>
+                    <td class="regular-gray-text">
+                        Ability to view your order total (including shipping fees, custom tariffs, and taxes) at checkout
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/ws/images/global/bullet.gif" alt="bullet"/></td>
+                    <td class="regular-gray-text">
+                        All prices will be displayed in your preferred currency
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/ws/images/global/bullet.gif" alt="bullet"/></td>
+                    <td class="regular-gray-text">
+                        The total is guaranteed at the exchange rate set when your order is placed
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/ws/images/global/bullet.gif" alt="bullet"/></td>
+                    <td class="regular-gray-text">
+                        No additional payment will be required upon delivery of your order
+                    </td>
+                </tr>
+                <tr height="70px">
+                    <td colspan="2" class="regular-gray-text" align="center">
+                        <strong>Please Note:</strong> Not all products sold on Wetseal.com can be shipped internationally and order total cannot
+                        exceed U.S. $2500
+                    </td>
+                </tr>
+                <tr height="100px">
+                    <td colspan="2" class="regular-gray-text" align="center">
+                        <strong>From the pull down menu below,</strong> please select the country you would like to ship to and the currency you would
+                        like
+                        to shop in, then click <em>'Save & Continue Shopping</em>'. If you have any questions, please contact us at 1.949.206.4988.
+                    </td>
+                </tr>
+            </table>
+        </td>
+        <td rowspan="2" width="362px">
+            <img src="/assets/ws/images/landing/hero-intlship.jpg" alt="International Shipping"/>
+        </td>
+    </tr>
+    <tr>
+        <td align="center"><p>
+            <table width="410" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+                    <td align="center" valign="top" colspan="2">Select Country:</td>
+                </tr>
+                <tr>
+                    <td align="center" valign="top" colspan="2">
+                        <label>
+                            <select id="countrySelection" class="selectBox" onChange="setCountry();">
+                                <option id="AG" value="AG"
+                                         >ANTIGUA AND BARBUDA - US Dollar (USD)</option>
+                                <option id="AR" value="AR"
+                                         >ARGENTINA - Argentine Peso (ARS)</option>
+                                <option id="AU" value="AU"
+                                         >AUSTRALIA - Australian Dollar (AUD)</option>
+                                <option id="AT" value="AT"
+                                         >AUSTRIA - Euro (EUR)</option>
+                                <option id="BH" value="BH"
+                                         >BAHRAIN - US Dollar (USD)</option>
+                                <option id="BD" value="BD"
+                                        
+                                        selected
+                                         >BANGLADESH - US Dollar (USD)</option>
+                                <option id="BB" value="BB"
+                                         >BARBADOS - US Dollar (USD)</option>
+                                <option id="BE" value="BE"
+                                         >BELGIUM - Euro (EUR)</option>
+                                <option id="BZ" value="BZ"
+                                         >BELIZE - US Dollar (USD)</option>
+                                <option id="BO" value="BO"
+                                         >BOLIVIA - US Dollar (USD)</option>
+                                <option id="BR" value="BR"
+                                         >BRAZIL - Brazillian Real (BRL)</option>
+                                <option id="BN" value="BN"
+                                         >BRUNEI - US Dollar (USD)</option>
+                                <option id="BG" value="BG"
+                                         >BULGARIA - Euro (EUR)</option>
+                                <option id="KH" value="KH"
+                                         >CAMBODIA - US Dollar (USD)</option>
+                                <option id="CA" value="CA"
+                                         >CANADA - Canadian Dollar (CAD)</option>
+                                <option id="CL" value="CL"
+                                         >CHILE - Chilean Peso (CLP)</option>
+                                <option id="CN" value="CN"
+                                         >CHINA - US Dollar (USD)</option>
+                                <option id="CO" value="CO"
+                                         >COLOMBIA - Colombian Peso (COP)</option>
+                                <option id="CR" value="CR"
+                                         >COSTA RICA - US Dollar (USD)</option>
+                                <option id="CY" value="CY"
+                                         >CYPRUS - Euro (EUR)</option>
+                                <option id="CZ" value="CZ"
+                                         >CZECH REPUBLIC - Czech Koruna (CZK)</option>
+                                <option id="DK" value="DK"
+                                         >DENMARK - Danish Krone (DKK)</option>
+                                <option id="DM" value="DM"
+                                         >DOMINICA - US Dollar (USD)</option>
+                                <option id="DO" value="DO"
+                                         >DOMINICAN REPUBLIC - US Dollar (USD)</option>
+                                <option id="EC" value="EC"
+                                         >ECUADOR - US Dollar (USD)</option>
+                                <option id="EG" value="EG"
+                                         >EGYPT - Egyptian Pound (EGP)</option>
+                                <option id="SV" value="SV"
+                                         >EL SALVADOR - US Dollar (USD)</option>
+                                <option id="EE" value="EE"
+                                         >ESTONIA - Euro (EUR)</option>
+                                <option id="FI" value="FI"
+                                         >FINLAND - Euro (EUR)</option>
+                                <option id="FR" value="FR"
+                                         >FRANCE - Euro (EUR)</option>
+                                <option id="DE" value="DE"
+                                         >GERMANY - Euro (EUR)</option>
+                                <option id="GR" value="GR"
+                                         >GREECE - Euro (EUR)</option>
+                                <option id="GD" value="GD"
+                                         >GRENADA - US Dollar (USD)</option>
+                                <option id="GT" value="GT"
+                                         >GUATEMALA - US Dollar (USD)</option>
+                                <option id="HT" value="HT"
+                                         >HAITI - US Dollar (USD)</option>
+                                <option id="HN" value="HN"
+                                         >HONDURAS - US Dollar (USD)</option>
+                                <option id="HK" value="HK"
+                                         >HONG KONG - Hong Kong Dollar (HKD)</option>
+                                <option id="HU" value="HU"
+                                         >HUNGARY - Hungarian Forint (HUF)</option>
+                                <option id="IN" value="IN"
+                                         >INDIA - Indian Rupee (INR)</option>
+                                <option id="ID" value="ID"
+                                         >INDONESIA - Indonesian Rupiah (IDR)</option>
+                                <option id="IE" value="IE"
+                                         >IRELAND - Euro (EUR)</option>
+                                <option id="IL" value="IL"
+                                         >ISRAEL - Israeli Shekel (ILS)</option>
+                                <option id="IT" value="IT"
+                                         >ITALY - Euro (EUR)</option>
+                                <option id="JM" value="JM"
+                                         >JAMAICA - US Dollar (USD)</option>
+                                <option id="JP" value="JP"
+                                         >JAPAN - Japanese Yen (JPY)</option>
+                                <option id="JO" value="JO"
+                                         >JORDAN - US Dollar (USD)</option>
+                                <option id="KW" value="KW"
+                                         >KUWAIT - Kuwaiti Dinar (KWD)</option>
+                                <option id="LV" value="LV"
+                                         >LATVIA - Latvian Lats (LVL)</option>
+                                <option id="LI" value="LI"
+                                         >LIECHTENSTEIN - Euro (EUR)</option>
+                                <option id="LT" value="LT"
+                                         >LITHUANIA - Lithuanian Litas (LTL)</option>
+                                <option id="LU" value="LU"
+                                         >LUXEMBOURG - Euro (EUR)</option>
+                                <option id="MO" value="MO"
+                                         >MACAU - Hong Kong Dollar (HKD)</option>
+                                <option id="MV" value="MV"
+                                         >MALDIVES - US Dollar (USD)</option>
+                                <option id="MT" value="MT"
+                                         >MALTA - Euro (EUR)</option>
+                                <option id="MX" value="MX"
+                                         >MEXICO - Mexican Peso (MXN)</option>
+                                <option id="MC" value="MC"
+                                         >MONACO - Euro (EUR)</option>
+                                <option id="MA" value="MA"
+                                         >MOROCCO - Moroccan Dirham (MAD)</option>
+                                <option id="NP" value="NP"
+                                         >NEPAL - Indian Rupee (INR)</option>
+                                <option id="NL" value="NL"
+                                         >NETHERLANDS - Euro (EUR)</option>
+                                <option id="NZ" value="NZ"
+                                         >NEW ZEALAND - New Zealand Dollar (NZD)</option>
+                                <option id="NI" value="NI"
+                                         >NICARAGUA - US Dollar (USD)</option>
+                                <option id="NO" value="NO"
+                                         >NORWAY - Norwegian Krone (NOK)</option>
+                                <option id="OM" value="OM"
+                                         >OMAN - Omani Rial (OMR)</option>
+                                <option id="PK" value="PK"
+                                         >PAKISTAN - US Dollar (USD)</option>
+                                <option id="PA" value="PA"
+                                         >PANAMA - US Dollar (USD)</option>
+                                <option id="PY" value="PY"
+                                         >PARAGUAY - US Dollar (USD)</option>
+                                <option id="PE" value="PE"
+                                         >PERU - Peruvian Nuevo Sol (PEN)</option>
+                                <option id="PH" value="PH"
+                                         >PHILIPPINES - Philippine Peso (PHP)</option>
+                                <option id="PL" value="PL"
+                                         >POLAND - Polish Zloty (PLN)</option>
+                                <option id="PT" value="PT"
+                                         >PORTUGAL - Euro (EUR)</option>
+                                <option id="QA" value="QA"
+                                         >QATAR - Qatari Riyal (QAR)</option>
+                                <option id="RO" value="RO"
+                                         >ROMANIA - Euro (EUR)</option>
+                                <option id="SA" value="SA"
+                                         >SAUDI ARABIA - Saudi Riyal (SAR)</option>
+                                <option id="SG" value="SG"
+                                         >SINGAPORE - Singapore Dollar (SGD)</option>
+                                <option id="SK" value="SK"
+                                         >SLOVAKIA - Euro (EUR)</option>
+                                <option id="SI" value="SI"
+                                         >SLOVENIA - Euro (EUR)</option>
+                                <option id="ZA" value="ZA"
+                                         >SOUTH AFRICA - South African Rand (ZAR)</option>
+                                <option id="KR" value="KR"
+                                         >SOUTH KOREA - Korean Won (KRW)</option>
+                                <option id="ES" value="ES"
+                                         >SPAIN - Euro (EUR)</option>
+                                <option id="LK" value="LK"
+                                         >SRI LANKA - US Dollar (USD)</option>
+                                <option id="SR" value="SR"
+                                         >SURINAME - US Dollar (USD)</option>
+                                <option id="SE" value="SE"
+                                         >SWEDEN - Swedish Krona (SEK)</option>
+                                <option id="CH" value="CH"
+                                         >SWITZERLAND - Swiss Franc (CHF)</option>
+                                <option id="TW" value="TW"
+                                         >TAIWAN - Taiwan Dollar (TWD)</option>
+                                <option id="TH" value="TH"
+                                         >THAILAND - Thai Baht (THB)</option>
+                                <option id="TT" value="TT"
+                                         >TRINIDAD AND TOBAGO - US Dollar (USD)</option>
+                                <option id="TR" value="TR"
+                                         >TURKEY - Turkish Lira (TRY)</option>
+                                <option id="UA" value="UA"
+                                         >UKRAINE - Ukraine Hryvnia (UAH)</option>
+                                <option id="AE" value="AE"
+                                         >UNITED ARAB EMIRATES - United Arab Emirates Dirham (AED)</option>
+                                <option id="GB" value="GB"
+                                         >UNITED KINGDOM - British Pound (GBP)</option>
+                                <option id="VN" value="VN"
+                                         >VIETNAM - US Dollar (USD)</option>
+                                </select>
+                        </label>
+                    </td>
+                </tr>
+                <tr height="60px">
+                    <td width="50%" align="center">
+                        <a href="javascript:backToUSSite();">
+                            <u><span class="backToUsText">Back to U.S. site</span></u>
+                        </a>
+                    </td>
+                    <td width="50%" align="center">
+                        <a href="javascript:goToSite();">
+                            <img src="/assets/ws/images/landing/btn-saveandcontinue.gif" alt="Save &amp; Continue Shopping" hspace="5"/>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+</div>
+      <div class="clr"><!--  --></div>
+      <!-- /content -->
+
+      <!-- footer -->
+      <div id="footer-area">
+        <div class="clear1">&nbsp;</div><style type="text/css"> <!--body, td, th {    font-family: Arial, Helvetica, sans-serif;    font-size: 12px;    color: #666666;}body {    background-color: #FFFFFF;    margin-left: 0px;    margin-top: 0px;    margin-right: 0px;    margin-bottom: 0px;}a {    font-size: 12px;    color: #666666;}a:visited {    color: #666666;}a:hover {    color: #000000;}a:active {    color: #666666;}footerimg {    vertical-align: text-middle;}--> </style><div id="footer-content">    <table width="980" border="0" align="center" cellpadding="0" cellspacing="0">        <tr>            <td>                <table width="980" border="0" cellspacing="0" cellpadding="5">                    <tr>                        <td colspan="9" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5" border="0"/></td>                    </tr>                    <tr>                        <td colspan="9" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5" border="0"/></td>                    </tr>                    <tr>                        <td colspan="2" align="left" valign="top">                            <img src="/assets/ws/images/global/footer-connect-with-us.gif" alt="Connect with Us" width="120" height="16"/>                        </td>                        <td width="0" align="left" valign="top"></td>                        <td colspan="2" align="left" valign="top">                            <img src="/assets/ws/images/global/footer-quickfind.gif" alt="Quick Find" width="74" height="15"/>                        </td>                        <td width="28" align="left" valign="top"></td>                        <td colspan="3" align="left" valign="top">                            <img src="/assets/ws/images/global/footer-help.gif" alt="Help" width="34" height="17"/>                        </td>                    </tr>                    <tr>                        <td colspan="2" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5" border="0"/>                        </td>                        <td align="left" valign="top"></td>                        <td colspan="2" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif"></td>                        <td align="left" valign="top"></td>                        <td colspan="3" align="left" valign="top" background="/assets/ws/images/global/footer-dots.gif"></td>                    </tr>                    <tr>                        <td width="95" align="left" valign="top"><a href="http://www.facebook.com/wetseal" target="_blank"><img                                src="/assets/ws/images/global/footer-facebook.gif" alt="Facebook" width="17" height="17" vspace="0" border="0"                                align="absmiddle"/></a> <a href="http://www.facebook.com/wetseal" target="_blank">Facebook</a></td>                        <td width="196" rowspan="4" align="left" valign="top">                            <span>&nbsp;</span>                            <form id="subscribeForm" action="/subscribe.cmd" method="post" name="subscribeForm">                                <input type='hidden' name='form_state' value='subscribeForm'/>                                <input name="userEmail" type="text" id="footer-email-input" value="Enter Email Address" size="20"                                       maxlength="80"/>                            </form>                        </td>                        <td rowspan="4" align="left" valign="top"></td>                        <td width="254" rowspan="4" align="left" valign="top" colspan="2">                        <!--<td width="141" rowspan="4" align="left" valign="top">-->                            <table width="206" border="0" cellpadding="2" cellspacing="0">                                <tr>                                    <td><a href="http://www.wetsealinc.com/" target="_blank">About Wet Seal</a></td>                                </tr>                                <tr>                                    <td>                                        <a href="/custserv/intl_custserv.jsp">International Customer Service</a>                                    </td>                                </tr>                            </table>                        </td>                        <td rowspan="4" align="left" valign="top"></td>                        <td width="317" rowspan="4" align="left" valign="top" colspan="3">                            <table width="284" border="0" cellpadding="2" cellspacing="0">                                <tr>                                    <td width="103"><a href="/custserv/intl_terms.jsp">Terms</a></td>                                </tr>                                <tr>                                    <td><a href="/custserv/intl_privacy.jsp">Privacy</a></td>                                </tr>                            </table>                        </td>                        </tr>                    <tr>                        <td align="left" valign="top">                            <a href="http://twitter.com/wetseal" target="_blank">                                <img src="/assets/ws/images/global/footer-twitter.gif" alt="Twitter" width="17" height="18" border="0" align="absmiddle"/>                            </a>                            <a href="http://twitter.com/wetseal" target="_blank">Twitter</a>                        </td>                    </tr>                    <tr>                        <td align="left" valign="top">                            <a href="http://www.youtube.com/user/wetseal" target="_blank">                                <img src="/assets/ws/images/global/footer-youtube.gif" alt="YouTube" width="17" height="18" border="0" align="absmiddle"/>                            </a>                            <a href="http://www.youtube.com/user/wetseal" target="_blank">YouTube </a>                        </td>                    </tr>                    <tr>                        <td align="left" valign="top">                            <a href="http://www.myspace.com/wetseal" target="_blank">                                <img src="/assets/ws/images/global/footer-myspace.gif" alt="MySpace" width="17" height="18" border="0" align="absmiddle"/>                            </a>                            <a href="http://www.myspace.com/wetseal" target="_blank">MySpace</a>                        </td>                    </tr>                    <tr>                        <td colspan="9" align="left" valign="middle">&nbsp;</td>                    </tr>                    <tr>                        <td colspan="9" align="left" valign="middle" background="/assets/ws/images/global/footer-dots.gif">                            <img src="/assets/ws/images/landing/1x1-trans.gif" width="1" height="5"/>                        </td>                    </tr>                    <tr>                        <td colspan="9" align="right" valign="top">                            <table width="970" border="0" cellspacing="0" cellpadding="0">                                <tr>                                    <td width="494" align="left" valign="top">                                        <a href="/content.jsp?pageName=iRunway">                                            <img src="/assets/ws/images/global/App_Store_Badge_EN.png" alt="Available on the App Store" border="0"/>                                        </a>                                    </td>                                    <td width="476" align="right" valign="top">                                        <img src="/assets/ws/images/global/footer-paypal.gif" alt="PayPal" hspace="10" vspace="4" align="top"/>                                        <script src="https://sealserver.trustkeeper.net/compliance/seal_js.php?code=x4itlmfC7lKupWYsmKfZ1ViTHPZC2k&amp;style=normal&amp;size=105x54&amp;language=en"></script>                                        <noscript>                                            <a href="https://sealserver.trustkeeper.net/compliance/cert.php?code=x4itlmfC7lKupWYsmKfZ1ViTHPZC2k&amp;style=normal&amp;size=105x54&amp;language=en"                                               target="hATW">                                                <img src="https://sealserver.trustkeeper.net/compliance/seal.php?code=x4itlmfC7lKupWYsmKfZ1ViTHPZC2k&amp;style=normal&amp;size=105x54&amp;language=en"                                                        alt="Trusted Commerce" border="0"/></a>                                        </noscript>                                    </td>                                </tr>                            </table>                        </td>                    </tr>                </table>            </td>        </tr>    </table>    <p><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=325820756&amp;mt=8"></a></p></div><script type="text/javascript">    $(function()    {        $("#footer-email-input").focus(function()        {            if ($(this).val() == "Enter Email Address")            {                $(this).val("");            }        });        $("#footer-email-input").blur(function()        {            if ($(this).val() == "")            {                $(this).val("Enter Email Address");            }        });    });    function submitEmailSignup()    {        $("form#subscribeForm").submit();    }    ;</script></div>
+
+      <div class="machine-name">
+            EL08-Wed Feb 16 11:06:51 PST 2011<br /><br />
+      </div>
+
+      <div class="clr"><!--  --></div>
+      <!-- /footer -->
+    </div>
+  </div>
+
+  <!-- Fireclick, Inc - COPYRIGHT 1999-2007 - Please do not modify this code-->
+  <script type="text/javascript">
+  <!--
+  function handle() {
+     return true;
+  }
+  window.onerror = handle;
+
+  
+  var fc_host = 'intl.wetseal.com';
+  document.write('<scr' + 'ipt '
+        + 'src="' + ((location.protocol == 'http:') ? 'http:' : 'https:')
+        + '//a248.e.akamai.net/f/248/5462/3h/hints.netflame.cc/service/sc' + 'ript/' + fc_host + '"></scr' + 'ipt>');
+  function fcce() {
+     if (typeof(fcnf) != "undefined") fcnf();
+  }
+  var fcfn = window.onload;
+  function fcco() {
+     window.setTimeout("fcce();", 100);
+     fcfn();
+  }
+  window.onload = null == fcfn ? fcce : fcco;
+  // -->
+  </script>
+  <!-- Fireclick, Inc - COPYRIGHT 1999-2007 - Please do not modify this code-->
+
+</body>
+</html>

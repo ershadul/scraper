@@ -1,0 +1,1 @@
+BagsClutches'NoneType' object has no attribute 'findAll' : http://www.yesstyle.com/en/bags-clutches/list.html/bcc.11556_bpt.46Carryalls<urlopen error (10054, 'Connection reset by peer')> : http://www.yesstyle.com/en/hwang-kum-style-woven-duffle-bag-with-cross-strap/info.html/pid.1024007957
